@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.displayWeather {
+  width: 42%;
+  height: 80vh;
+  /* border: 1px solid black; */
+  border-right: none;
+  position: relative;
+  padding-left: 30px;
+  color: white;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg");
+  background-size: cover;
+}
+
+.parap {
+  position: absolute;
+  top: 80%;
+}
+
+.p3 {
+  position: absolute;
+  top: 70%;
+}
+
+.p2 {
+  position: absolute;
+  top: 55%;
+
+  font-size: 50px;
+}
+
+.p1 {
+  position: absolute;
+  top: 20%;
+  font-size: 40px;
+}
+
+.enterDetails {
+  width: 35%;
+  height: 80vh;
+  /* border: 1px solid black; */
+  /* border-left: none; */
+
+  padding: 30px;
+  color: white;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    /* url("https://img.freepik.com/free-photo/sky-clouds-background_1127-3887.jpg"); */
+      url("https://w0.peakpx.com/wallpaper/812/886/HD-wallpaper-nice-weather-beauty-blue-clouds-nature-sky.jpg");
+  background-size: cover;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+}
+
+/* Search */
+.search {
+  display: flex;
+  max-width: 500px;
+  /* border: 1px solid black; */
+  margin-bottom: 30px;
+}
+
+#userInput {
+  width: 60%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding-left: 4px;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+hr {
+  color: grey;
+  font-weight: 700;
+}
+
+.weatherApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cNames {
+  margin: 30px 0px;
+}
+
+.wrong {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+}
+.wrong p {
+  /* color: red; */
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.wrong img {
+  width: 300px;
+  height: 300px;
+}
+
+.pWea {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.pWea p {
+  position: absolute;
+  top: 100%;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.pWea img {
+  width: 200px;
+  height: 200px;
+}
+
+.fal {
+  font-size: 30px;
+}
+.faai {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .weatherApp {
+    display: block;
+    margin: 0 auto;
+  }
+  .displayWeather {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .enterDetails {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
